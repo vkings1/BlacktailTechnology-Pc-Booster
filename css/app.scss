@@ -31,49 +31,12 @@
    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
  }
 
- 
-// Colors
-$primary: #2196f3;
-$primary-ultralight: mix(white, $primary, 80%);
-$primary-light: mix(white, $primary, 25%);
-$primary-dark: mix(black, $primary, 25%);
-$primary-ultradark: mix(black, $primary, 80%);
-$black: #333333;
-$white: #eeeeee;
 
-.cursor-dot,
-.cursor-dot-outline {
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
-    z-index: 9999;
-}
-
-.cursor-dot {
-    $size: 8px;
-    width: $size;
-    height: $size;
-    background-color: $primary;
-}
-
-.cursor-dot-outline {
-    $size: 40px;
-    width: $size;
-    height: $size;
-    background-color: rgba($primary-light, 0.5);
-}
  
  *,
  *::before,
  *::after {
    box-sizing: border-box;
-    cursor: none;  
  }
  
  html {
