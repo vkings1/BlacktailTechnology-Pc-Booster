@@ -56,3 +56,18 @@
   });
 
 })(jQuery); // End of use strict
+
+/**loader of this website */
+document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+         document.getElementById('contents').style.visibility="hidden";
+    } else if (state == 'complete') {
+        setTimeout(function(){
+           document.getElementById('interactive');
+           document.getElementById('loader').style.visibility="hidden";
+           document.getElementById('contents').style.visibility="visible";
+        },1000);
+    }
+  }; 
+ /**end of the loader of this website */
