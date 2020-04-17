@@ -1,0 +1,80 @@
+<?php require_once 'inc/assets.php'; ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>DriverUpdate+ - Scan Your Windows&reg; Computer Fast &amp; Free and Get Updated Drivers Now!</title>
+    <meta name="description" content="DriverUpdate+ provides the fastest, easiest, free scan of your computer to quickly identify missing or out-of-date drivers and improve the performance and stability of your computer!">
+    <meta name="keywords" content="driver update, windows&reg; driver, update drivers, install drivers, driver errors, printer drivers, scanner drivers, camera drivers, graphics card drivers, audio drivers">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+    <link href="./css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="./js/download-helper.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="header">
+    <img src="./images/SafeSoft.png" style="width: 42px;" class="logo"/>
+	<div class="header-contacts"><div class="header-contacts__phone">(800) 717-6954</div> <a href="products/premium-services/" class="header-contacts__link">Get support</a></div>
+</div>
+<div class="main-content">
+    <h1>Scan it safely and for FREE with our All-in-1 tool.</h1>
+    <!-- <h2>Scan it safely and for FREE with our All-in-1 tool</h2> -->
+    <a href="<?php echo $download; ?>" class="download-btn dl_link">Click Here to Download </a>
+    <p class="disclaimer">Free Scan for Windows XP, Vista, 7, 8 and 10.</p>
+    <div class="symbols">
+        <img src="./images/colored-icon-thing.png" class="symbol"/>
+        <h1>System Information</h1>
+        <p>
+            Your machine is currently running: Windows<sup>&reg;</sup> 10<br/>
+            SafeSoft PC Cleaner is compatible with your operating system
+        </p>
+        <img src="./images/microsoft-partner.gif" class="partner"/>
+    </div>
+</div>
+
+<div class="lower-content">
+    <div class="block">
+        <h1>Free Scan, No risk</h1>
+        <p>Start your Free Scan and see the junk files that have accumulated in your computer over the years.</p>
+    </div>
+    <div class="block">
+        <h1>Automatic Maintenance</h1>
+        <p>Easily manage your PC maintenance with automated schedules of scans, cleanups, and repairs with just 1 click.</p>
+    </div>
+    <div class="block">
+        <h1>Protect Privacy</h1>
+        <p>SafeSoft PC Cleaner also has an ID scanner that helps avoid compromising your sensitive files such as IDs, credit cards, etc.</p>
+    </div>
+</div>
+
+<div class="bottom-content">
+    <p>
+        SafeSoft PC Cleaner is an All-in-1 tool that’s created to help people who are not adept with PC maintenance. Its powerful features can scan, detect, clean, repair, and protect one’s computer and are designed to be performed with just 1 click.
+    </p>
+</div>
+<div class="footer">
+    <a class="link" href="http://www.driverupdateplus.com/privacy.php" target="_new">Privacy Policy</a> |
+    <a class="link" href="http://www.driverupdateplus.com/return-policy.php" target="_new">Return Policy</a> |
+    <a class="link" href="http://www.driverupdateplus.com/eula.php" target="_new">EULA</a> |
+    <a class="link" href="http://www.driverupdateplus.com/contact.php" target="_new">Contact</a> |
+    <a class="link" href="http://www.driverupdateplus.com/support.html#uninstall" target="_new">Uninstall</a>
+    <a href="http://dl.letpcwork.today/Driver_Update_setup.exe" class="footer-btn dl_link">Start Download</a>
+    <img src="./images/microsoft-partner-footer.gif" class="partner"/>
+    <div style="clear:both"></div>
+</div>
+
+
+<script src="./js/jquery.min.js" type="text/javascript"></script>
+<script src="./js/download-helper.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var dlLink = $('.dl_link').attr('src','<?php echo $download; ?>');
+    dlLink.downloadHelper();
+    dlLink.on('click', function (event) {
+        setTimeout(function () { }, 1000);
+        return true;
+    });
+</script>
+<!-- <script src="//www.pcenergizer.com/tracking202/static/landing.php?lpip=81295" async defer></script> -->
+</body>
+</html>
