@@ -102,7 +102,9 @@ body {
   padding-bottom: 70px; }
   .footer .link {
     text-decoration: none;
-    color: #BBBBBB; }
+    color: #BBBBBB;
+    margin-left: 1px;
+    font-size: 13px; }
   .footer .partner {
     float: right;
     margin-right: 40px; }
@@ -160,11 +162,6 @@ text-indent: 30px; }
   bottom: 15px;
   color: #fff;
 }
-.otherLinks {
-  text-align: center;
-  /* color: #eeeeee; */
-  background-color: #eeeeee;
-}
-.otherLinks a {
-  /* color: #eeeeee; */
+span.links {
+  margin-left: -227px;
 }
