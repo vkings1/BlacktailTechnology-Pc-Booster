@@ -51,7 +51,7 @@ body {
       font-size: 14px;
       color: black; }
     .main-content .symbols p {
-      margin: 0;
+      margin: 15px;
       padding: 0;
       font-size: 12px; }
     .main-content .symbols .partner {
@@ -159,4 +159,12 @@ text-indent: 30px; }
   position: relative;
   bottom: 15px;
   color: #fff;
+}
+.otherLinks {
+  text-align: center;
+  /* color: #eeeeee; */
+  background-color: #eeeeee;
+}
+.otherLinks a {
+  /* color: #eeeeee; */
 }
