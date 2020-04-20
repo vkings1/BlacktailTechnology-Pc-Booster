@@ -19,7 +19,7 @@ body {
     margin: 0;
     font-size: 38px;
     padding-top: 50px;
-    padding-bottom: 10px; }
+    padding-bottom: 54px; }
   .main-content h2 {
     color: #545454;
     font-weight: normal;
@@ -90,7 +90,7 @@ body {
   .bottom-content p {
     color: #B0B0B0;
     font-size: 13px;
-    width: 90%;
+    width: 69%;
     margin: 0 auto; }
 
 .footer {
@@ -154,4 +154,9 @@ text-indent: 30px; }
     letter-spacing: 0;
     -webkit-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
+}
+.text-white {
+  position: relative;
+  bottom: 15px;
+  color: #fff;
 }
