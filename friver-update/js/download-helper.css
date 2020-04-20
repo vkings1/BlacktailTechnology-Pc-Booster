@@ -1,0 +1,46 @@
+#download-helper-overlay {
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.download-helper-overlay-bg {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	-moz-opacity: 0.80;
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+	filter:alpha(opacity=80);
+}
+#download-helper {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.download-helper-ie {
+	display: block;
+	background-image: url(../img/directions_ie.png);
+	margin-left: auto;
+	margin-right: auto;
+	width: 577px;
+	height: 310px;
+}
+.download-helper-ff {
+	display: block;
+	background-image: url(../img/directions_ff.png);
+	margin-left: auto;
+	width: 780px;
+	height: 300px;
+}
+.download-helper-chrome {
+	display: block;
+	background-image: url(../img/directions_chrome.png);
+	width: 577px;
+	height: 310px;
+}

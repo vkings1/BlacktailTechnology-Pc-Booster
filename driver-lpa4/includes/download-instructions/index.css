@@ -1,0 +1,353 @@
+.modal-shadow {
+	font-family: 'Open Sans', Sans-Serif;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1px;
+	height: 1px;
+	z-index: 9990;
+	background: rgba(0,0,0,0.8);
+	overflow:hidden;
+}
+.modal-shadow .modal-container {
+	position: fixed;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	font-size: 14px;
+}
+.modal-shadow .modal-container .content {
+	width: 895px;
+	height: 460px;
+}
+.modal-shadow .modal-container .content h3 {
+	font-size: 24px;
+	font-style: italic;
+	font-weight: normal;
+	color: #ffffff;
+	background-repeat: no-repeat;
+	padding: 10px 0px 0px 80px;
+	width: 895px;
+	margin: 0px auto;
+}
+.modal-shadow .modal-container a {
+	color: #2b86d9;
+}
+.modal-shadow .modal-container .content ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.modal-shadow .modal-container .content ul:before,
+.modal-shadow .modal-container .content ul:after {
+	content:"";
+	display:table;
+}
+.modal-shadow .modal-container .content ul:after {
+	clear:both;
+}
+.modal-shadow .modal-container .content ul {
+	zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.modal-shadow .modal-container .content ul li {
+	float: left;
+	width: 270px;
+	height: 240px;
+	margin-right: 33px;
+	border: 3px solid #ebebeb;
+	border-radius: 7px;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.modal-shadow .modal-container .content ul li .step {
+	display: block;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: -32px;
+	left: -32px;
+	background-repeat: no-repeat;
+	background-image: url('i/steps.png');
+}
+.modal-shadow .modal-container .content ul li:last-child {
+	margin-right: 0px;
+}
+.modal-shadow .modal-container .content ul li strong {
+	background: #ebebeb;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	padding: 5px 0px 10px 0px;
+}
+.modal-shadow .modal-container .content ul li p {
+	padding: 10px;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
+.modal-shadow .modal-container .content ul li p b {
+	color: #1c64cc;
+}
+.modal-shadow .modal-container .content ul li.screen1 .step {
+	background-position: 0px 0px;
+}
+.modal-shadow .modal-container .content ul li.screen2 .step {
+	background-position: -59px 0px;
+}
+.modal-shadow .modal-container .content ul li.screen3 .step {
+	background-position: -120px 0px;
+}
+
+.modal-shadow .modal-container .content p.retry {
+	background: #ffffff;
+	border: 3px solid #ebebeb;
+	border-radius: 7px;
+	margin: 20px 0px 0px 0px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 4px 0px 7px 0px;
+}
+.modal-shadow .modal-container .content p.retry a {
+	color: #2a6bce;
+}
+
+/** Firefox **/
+.modal-shadow .firefox .content h3 {
+	background-image: url('i/firefox-logo.png');
+}
+.modal-shadow .firefox .content ul li p span.icon {
+	padding: 5px 50px 16px 0px;
+	background: url('i/firefox-download-icon.png') no-repeat 5px 3px;
+}
+.modal-shadow .firefox div.icon {
+	position: absolute;
+	top: -66px;
+    height: 400px;
+    right: -350px;
+    width: 400px;
+	background: url('i/ff-arrow.gif') no-repeat;
+}
+/** // firefox **/
+
+/** Chrome **/
+.modal-shadow .chrome .content ul li p {
+	padding-top: 25px;
+}
+.modal-shadow .chrome .content ul li.screen1 p,
+.modal-shadow .chrome .content ul li.screen2 p {
+	padding-top: 30px;
+}
+.modal-shadow .chrome .content h3 {
+	background-image: url('i/chrome-logo.png');
+}
+.modal-shadow .chrome .icon {
+	position: absolute;
+	bottom: 4px;
+    height: 499px;
+    left: -125px;
+    width: 85px;
+	background: url('i/chrome-icon.png') no-repeat;
+}
+.modal-shadow .chrome.boostmypc .icon,
+.modal-shadow .chrome.speedtest-optimizer .icon,
+.modal-shadow .chrome.fix-my-pc .icon {
+    height: 510px;
+	background: none;
+}
+/** // chrome **/
+
+/** Internet Explorer 10-11 **/
+.modal-shadow .msedge .content ul li p,
+.modal-shadow .iexplorer10 .content ul li p {
+	padding-top: 30px;
+}
+.modal-shadow .msedge .content h3 {
+	background-image: url('i/msedge-logo.png');
+}
+.modal-shadow .iexplorer10 .content h3 {
+	background-image: url('i/iexplorer10-logo.png');
+}
+.modal-shadow .msedge div.icon,
+.modal-shadow .iexplorer10 div.icon,
+.modal-shadow .iexplorer8 div.icon {
+	position: absolute;
+	top: 0;
+	left: -112px;
+	z-index: 9993;
+    height: 510px;
+    width: 85px;
+	background: url('i/arrow.gif') no-repeat;
+}
+/** // internet explorer 10 **/
+
+
+/** Internet Explorer 8 **/
+.modal-shadow .iexplorer8 .content ul li p {
+	padding-top: 30px;
+}
+.modal-shadow .iexplorer8 .content h3 {
+	background-image: url('i/iexplorer8-logo.png');
+}
+/** // internet explorer 8 **/
+
+
+/****** - Softwares - *******/
+
+.modal-shadow .content ul li.screen1 {
+	background-position: 17px 50px;
+	cursor: pointer;
+}
+.modal-shadow .content ul li.screen2 {
+	background-position: -269px 55px;
+	cursor: pointer;
+}
+.modal-shadow .content ul li.screen3 {
+	background-position: -548px 58px;
+	cursor: pointer;
+}
+
+
+/** PC Speed Up -- Firefox **/
+.modal-shadow .firefox.boostmypc .content ul li {
+	background-image: url('boostmypc/i/firefox-screen.png');
+}
+.modal-shadow .firefox.speedtest-optimizer .content ul li {
+	background-image: url('speedtest-optimizer/i/firefox-screen.png');
+}
+.modal-shadow .firefox.fix-my-pc .content ul li {
+	background-image: url('fix-my-pc/i/firefox-screen.png');
+}
+
+/** PC Speed Up - Chrome **/
+.modal-shadow .chrome.boostmypc .content ul li {
+	background-image: url('boostmypc/i/chrome-screen.png');
+}
+.modal-shadow .chrome.speedtest-optimizer .content ul li {
+	background-image: url('speedtest-optimizer/i/chrome-screen.png');
+}
+.modal-shadow .chrome.fix-my-pc .content ul li {
+	background-image: url('fix-my-pc/i/chrome-screen.png');
+}
+.modal-shadow .chrome.boostmypc .content ul li.screen1,
+.modal-shadow .chrome.speedtest-optimizer .content ul li.screen1,
+.modal-shadow .chrome.fix-my-pc .content ul li.screen1 {
+	background-position: 17px 60px;
+}
+.modal-shadow .chrome.boostmypc .content ul li.screen2,
+.modal-shadow .chrome.speedtest-optimizer .content ul li.screen2,
+.modal-shadow .chrome.fix-my-pc .content ul li.screen2 {
+	background-position: -269px 50px;
+}
+.modal-shadow .chrome.boostmypc .content ul li.screen3,
+.modal-shadow .chrome.speedtest-optimizer .content ul li.screen3,
+.modal-shadow .chrome.fix-my-pc .content ul li.screen3 {
+	background-position: -548px 65px;
+}
+
+/** PC Speed Up - IExplorer 10-11 **/
+.modal-shadow .msedge.boostmypc .content ul li {
+	background-image: url('boostmypc/i/msedge-screen.png');
+}
+.modal-shadow .iexplorer10.boostmypc .content ul li {
+	background-image: url('boostmypc/i/iexplorer10-screen.png');
+}
+.modal-shadow .msedge.speedtest-optimizer .content ul li {
+	background-image: url('speedtest-optimizer/i/msedge-screen.png');
+}
+.modal-shadow .iexplorer10.speedtest-optimizer .content ul li {
+	background-image: url('speedtest-optimizer/i/iexplorer10-screen.png');
+}
+.modal-shadow .iexplorer10.fix-my-pc .content ul li {
+	background-image: url('fix-my-pc/i/iexplorer10-screen.png');
+}
+
+/** PC Speed Up - IExplorer 8-9 **/
+.modal-shadow .iexplorer8.boostmypc .content ul li {
+	background-image: url('boostmypc/i/iexplorer8-screen.png');
+}
+.modal-shadow .iexplorer8.speedtest-optimizer .content ul li {
+	background-image: url('speedtest-optimizer/i/iexplorer8-screen.png');
+}
+.modal-shadow .iexplorer8.fix-my-pc .content ul li {
+	background-image: url('fix-my-pc/i/iexplorer8-screen.png');
+}
+
+
+
+/** PC Cleaner -- Firefox **/
+.modal-shadow .firefox.pc-cleaner .content ul li {
+	background-image: url('pc-cleaner/i/firefox-screen.png');
+}
+
+/** PC Cleaner - Chrome **/
+.modal-shadow .chrome.pc-cleaner .content ul li {
+	background-image: url('pc-cleaner/i/chrome-screen.png');
+}
+.modal-shadow .chrome.pc-cleaner .content ul li.screen1 {
+	background-position: 17px 95px;
+}
+.modal-shadow .chrome.pc-cleaner .content ul li.screen2 {
+	background-position: -269px 95px;
+}
+.modal-shadow .chrome.pc-cleaner .content ul li.screen3 {
+	background-position: -548px 95px;
+}
+
+/** PC Cleaner - IExplorer 10-11 **/
+.modal-shadow .iexplorer10.pc-cleaner .content ul li {
+	background-image: url('pc-cleaner/i/iexplorer10-screen.png');
+}
+
+/** PC Cleaner - IExplorer 8-9 **/
+.modal-shadow .iexplorer8.pc-cleaner .content ul li {
+	background-image: url('pc-cleaner/i/iexplorer8-screen.png');
+}
+
+.modal-shadow .di-phone-container {
+	font-size: 18px;
+	color: #fff;
+	font-style: normal;
+	margin: 10px 0px 40px 0px;
+	line-height: 29px;
+}
+.modal-shadow .di-phone {
+	font-weight: bold;
+	text-decoration: underline;
+	display: inline-block;
+	background: url('boostmypc/i/phone.png') -2px 0px no-repeat;
+	margin: 0px 0px 0px 5px;
+	padding: 0px 0px 0px 35px;
+	height: 29px;
+}
+
+
+.modal-shadow .boostmypc .close {
+	width: 28px;
+	height: 28px;
+	background: url('boostmypc/i/close.png') top left no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: -30px;
+}
+.modal-shadow .speedtest-optimizer .close {
+	width: 28px;
+	height: 28px;
+	background: url('speedtest-optimizer/i/close.png') top left no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: -42px;
+}
+.modal-shadow .fix-my-pc .close {
+	width: 28px;
+	height: 28px;
+	background: url('fix-my-pc/i/close.png') top left no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: -30px;
+}
