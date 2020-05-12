@@ -159,7 +159,7 @@ text-indent: 30px; }
 }
 .text-white {
   position: relative;
-  bottom: 15px;
+  /* bottom: 15px; */
   color: #fff;
 }
 span.links {
